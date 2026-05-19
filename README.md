@@ -4,14 +4,15 @@
 
 - **資料源**: FRED 公開 CSV 端點(無需 API key)
 - **更新頻率**: 每日一次,排程於 UTC 22:00 ≈ Asia/Taipei 06:00 翌日
-- **看板** (15 個指標):
+- **看板** (21 個指標):
   - **主指標**: 整體 HY OAS 利差(互動式圖,可拖曳放大、滑鼠檢視精確值、1M/3M/6M/1Y/3Y 切換)
   - **HY 分評等利差**: BB / B / CCC
   - **HY 殖利率**: 有效殖利率、最差殖利率
-  - **利率與殖利率曲線**: 聯邦資金利率、10Y 公債、2Y 公債、10Y−2Y 利差
+  - **信用條件與市場壓力**: IG 投資級 OAS(對照)、NFCI 金融條件指數、STLFSI4 金融壓力指數、DRTSCILM 銀行 C&I 緊縮意願(違約率領先指標代理)
+  - **利率與殖利率曲線**: 聯邦資金利率、10Y 公債、2Y 公債、10Y−2Y 利差、10Y−3M 利差
   - **通膨**: CPI 年增、Core PCE 年增
   - **經濟成長**: 失業率、實質 GDP 季增年化
-  - **市場風險情緒**: VIX
+  - **市場風險情緒與商品**: VIX、WTI 原油
 - **第三方資源**: 互動圖表用 [lightweight-charts](https://www.tradingview.com/lightweight-charts/) (TradingView 開源,Apache 2.0),從 jsDelivr CDN 載入,無 build step
 
 ---
@@ -130,14 +131,17 @@ git push -u origin main
       "id": "BAMLH0A0HYM2",
       "label": "整體 OAS 利差",
       "label_en": "ICE BofA US HY OAS",
-      "category": "main",            // main | rating | yield
-      "unit": "percent"
+      "category": "main",            // main | rating | yield | credit | rates | inflation | growth | risk
+      "unit": "percent",             // percent → 加 % 後綴、delta 顯示為 bp;level → 不加後綴、delta 為 pt
+      "transform": "yoy_pct",        // (可選)目前只有 yoy_pct:把指數轉年增率
+      "allow_zero": false            // (可選)預設 false,值=0 視為 FRED 假日 placeholder 丟棄
+                                     // NFCI/STLFSI4/DRTSCILM 等指數型,0 是合法中性值,需設 true
     }
   ]
 }
 ```
 
-`category` 決定它出現在哪一區塊(主指標 / 分評等 / 殖利率)。
+`category` 決定它出現在哪一區塊。對照 `sections` 設定:主指標 / 分評等 / 殖利率 / 信用條件 / 利率與曲線 / 通膨 / 成長 / 風險情緒。
 
 ---
 
@@ -147,7 +151,7 @@ git push -u origin main
 
 | 項目 | 為何沒做 | 可參考的替代 |
 |---|---|---|
-| 違約率 / 預期違約機率 (PD) / 回收率 | FRED 沒有 Moody's/S&P 月報資料;PDF/付費 feed | **Proxy**: 觀察 CCC OAS 與 BB→CCC 利差擴散度。BB→CCC 擴散加速通常領先違約率上升約 2-4 季 |
+| 違約率 / 預期違約機率 (PD) / 回收率 | FRED 沒有 Moody's/S&P 月報資料;PDF/付費 feed | **Proxy 1(最強)**: 儀表板「信用條件」區的 **DRTSCILM**(銀行 C&I 緊縮意願),歷史上領先違約率上升約 2-4 季。**Proxy 2**: CCC OAS 與 BB→CCC 利差擴散度。 |
 | 跌落天使 (Fallen Angels)、不良交換 (Distressed Exchange) | 事件型資料,需要 issuer-level feed(Bloomberg / S&P CapIQ) | 商業終端機;或手動追蹤 |
 | 高收益債資金流向 (Fund Flows) | FRED 沒有;資料源是 ICI / EPFR / ETF.com(多為付費) | EPFR 月度報告;或 HYG/JNK ETF 的 AUM 變動 |
 | HY 整體存續期間 (Duration) | 沒有單一可觀測指標 | 產業共識值約 **3-4 年**(美元 HY 指數約 3.2-3.8 年)。對利率敏感度的判讀:HY OAS 對利率變動的反應遠小於投資等級債,因利差波動本身遠大於同期利率變動 |

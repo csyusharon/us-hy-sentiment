@@ -23,12 +23,14 @@ export async function fetchSeriesCsv(endpoint, seriesId, startDate) {
 
 // FRED CSV 格式:第一欄為日期(欄名歷年來變過,如 DATE / observation_date),
 // 第二欄為 series ID。每列 2 欄,無 quote 跳脫。
-// 缺值處理:文件上是 ".",但實測 FRED 對美國市場假日(聖誕、元旦、Good Friday、
-// Memorial Day、Juneteenth、Labor Day…)會回 "0" 而非 "."。本專案目前使用的
-// 15 個 series(HY OAS/分評等/殖利率、Treasury 殖利率、T10Y2Y、UNRATE、VIX、
-// CPI/PCE 指數、實質 GDP)在合法觀測下都不會等於 0,因此一律當缺值丟掉。
-// 若未來新增可能合法為 0 的 series,需要另外處理(例如改用 series-level 設定)。
-export function parseSeriesCsv(csv, seriesId) {
+// 缺值處理:
+//   1. "." → 文件上的缺值符,丟棄。
+//   2. value === 0 → FRED 對美國市場假日(聖誕、元旦、Good Friday、Memorial Day、
+//      Juneteenth、Labor Day…)會回 "0" 而非 ".";對日頻 yield/spread/price 而言
+//      0 是 placeholder 不是真實觀測,預設一併丟掉。
+//   3. 但有些指標(NFCI、STLFSI4、DRTSCILM)0 是合法的「中性」觀測,
+//      呼叫端要傳 { allowZero: true } 才會保留。
+export function parseSeriesCsv(csv, seriesId, { allowZero = false } = {}) {
   const lines = csv.trim().split(/\r?\n/);
   if (lines.length < 2) {
     throw new Error(`FRED CSV for ${seriesId} has no data rows`);
@@ -47,7 +49,7 @@ export function parseSeriesCsv(csv, seriesId) {
     }
     const value = Number(rawValue);
     if (!Number.isFinite(value)) continue;
-    if (value === 0) continue;
+    if (value === 0 && !allowZero) continue;
     rows.push({ date, value });
   }
   if (rows.length === 0) {

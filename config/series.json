@@ -8,10 +8,11 @@
     { "id": "main", "label": "主指標 — 整體高收益債利差", "categories": ["main"] },
     { "id": "hy_rating", "label": "分評等利差(信用品質分化)", "categories": ["rating"] },
     { "id": "hy_yield", "label": "高收益債殖利率", "categories": ["yield"] },
+    { "id": "credit_conditions", "label": "信用條件與市場壓力", "categories": ["credit"] },
     { "id": "macro_rates", "label": "利率與殖利率曲線", "categories": ["rates"] },
     { "id": "macro_inflation", "label": "通膨", "categories": ["inflation"] },
     { "id": "macro_growth", "label": "經濟成長", "categories": ["growth"] },
-    { "id": "macro_risk", "label": "市場風險情緒", "categories": ["risk"] }
+    { "id": "macro_risk", "label": "市場風險情緒與商品", "categories": ["risk"] }
   ],
 
   "series": [
@@ -59,6 +60,38 @@
     },
 
     {
+      "id": "BAMLC0A0CM",
+      "label": "投資級 OAS(對照)",
+      "label_en": "ICE BofA US IG Corporate OAS",
+      "category": "credit",
+      "unit": "percent"
+    },
+    {
+      "id": "NFCI",
+      "label": "金融條件指數(NFCI)",
+      "label_en": "Chicago Fed National Financial Conditions",
+      "category": "credit",
+      "unit": "level",
+      "allow_zero": true
+    },
+    {
+      "id": "STLFSI4",
+      "label": "金融壓力指數(STLFSI4)",
+      "label_en": "St. Louis Fed Financial Stress Index",
+      "category": "credit",
+      "unit": "level",
+      "allow_zero": true
+    },
+    {
+      "id": "DRTSCILM",
+      "label": "銀行 C&I 緊縮意願(淨 %)",
+      "label_en": "Net % Banks Tightening C&I Loan Standards",
+      "category": "credit",
+      "unit": "level",
+      "allow_zero": true
+    },
+
+    {
       "id": "DFF",
       "label": "聯邦資金利率",
       "label_en": "Federal Funds Effective Rate",
@@ -83,6 +116,13 @@
       "id": "T10Y2Y",
       "label": "10Y−2Y 利差(殖利率曲線)",
       "label_en": "10Y minus 2Y Spread",
+      "category": "rates",
+      "unit": "percent"
+    },
+    {
+      "id": "T10Y3M",
+      "label": "10Y−3M 利差(NY Fed 衰退指標)",
+      "label_en": "10Y minus 3M Spread",
       "category": "rates",
       "unit": "percent"
     },
@@ -123,6 +163,13 @@
       "id": "VIXCLS",
       "label": "VIX 波動率指數",
       "label_en": "CBOE VIX",
+      "category": "risk",
+      "unit": "level"
+    },
+    {
+      "id": "DCOILWTICO",
+      "label": "WTI 原油",
+      "label_en": "WTI Crude Oil Spot",
       "category": "risk",
       "unit": "level"
     }

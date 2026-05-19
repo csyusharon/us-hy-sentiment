@@ -33,7 +33,9 @@ async function fetchOne(config, series) {
     : startDate(config.lookback_years);
 
   const csv = await fetchSeriesCsv(config.fred_csv_endpoint, series.id, cosd);
-  let rows = parseSeriesCsv(csv, series.id);
+  let rows = parseSeriesCsv(csv, series.id, {
+    allowZero: series.allow_zero === true,
+  });
 
   if (needsYoy) {
     rows = applyYoyPct(rows);
