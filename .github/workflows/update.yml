@@ -1,10 +1,12 @@
 name: update-data
 
-# 排程 UTC 22:00 = Asia/Taipei 06:00 翌日。
+# 排程 UTC 16:00 = Asia/Taipei 00:00 翌日 ≈ 美東 11:00-12:00。
+# 選這個時段是因為 FRED 對 HY OAS / Treasury / VIX 等日頻系列大約在美東 9-10 AM
+# publish 當日(T-1 收盤值);抓在這之後才會拿到「昨天」收盤,而不是「再前一天」。
 # 不掛 push 觸發,避免「commit data.json → 觸發 workflow → 再 commit」的迴圈。
 on:
   schedule:
-    - cron: '0 22 * * *'
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 permissions:
