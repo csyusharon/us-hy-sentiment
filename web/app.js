@@ -6,6 +6,7 @@ import {
   EXTERNAL_REFERENCES,
   HERO_RANGES,
   HERO_DEFAULT_RANGE,
+  SPARKLINE_OVERRIDES,
 } from './config.js';
 import { sparkline, rangeBar } from './charts.js';
 import { sentimentText, bucketLabel } from './sentiment.js';
@@ -92,7 +93,7 @@ function renderCard(series) {
   `;
 
   card.querySelector('.spark-slot').appendChild(
-    sparkline(series.data, { color }),
+    sparkline(series.data, { color, ...(SPARKLINE_OVERRIDES[series.id] ?? {}) }),
   );
   card.querySelector('.range-slot').appendChild(
     rangeBar({ percentile: series.percentile, color }),

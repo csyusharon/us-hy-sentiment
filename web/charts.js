@@ -17,8 +17,9 @@ function el(name, attrs = {}) {
   return node;
 }
 
-export function sparkline(rows, { color }) {
-  const { width, height, padding, stroke_width } = SPARKLINE;
+export function sparkline(rows, { color, stroke_width: strokeOverride } = {}) {
+  const { width, height, padding } = SPARKLINE;
+  const stroke_width = strokeOverride ?? SPARKLINE.stroke_width;
   const svg = el('svg', {
     viewBox: `0 0 ${width} ${height}`,
     preserveAspectRatio: 'none',

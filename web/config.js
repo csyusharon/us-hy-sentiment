@@ -14,6 +14,12 @@ export const SPARKLINE = {
   stroke_width: 1.0,
 };
 
+// 單一 series 的視覺微調(理由:VIX 是 level 系列、日間波動劇烈,自動拉伸到全高
+// 後鋸齒密集,線寬要再細才看得清楚趨勢)。
+export const SPARKLINE_OVERRIDES = {
+  VIXCLS: { stroke_width: 0.6 },
+};
+
 export const RANGE_BAR = {
   width: 240,
   height: 22,
