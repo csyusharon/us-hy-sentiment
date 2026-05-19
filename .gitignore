@@ -1,0 +1,15 @@
+node_modules/
+.DS_Store
+*.log
+.env
+.env.*
+.vscode/
+.idea/
+
+# Claude Code 與 skills 個人狀態,不入 repo
+.claude/
+.agents/
+skills-lock.json
+
+# 誤建的全域指示檔(含個資),不 commit
+cluade.md

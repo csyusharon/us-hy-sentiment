@@ -1,0 +1,573 @@
+/* 現代金融出版品風格(FT.com / Bloomberg.com)
+   - 深藍漸層背景,長時間檢視不刺眼
+   - sans-serif 為主,數字用 tabular-nums 對齊
+   - 顏色僅在 delta 與分位標籤上使用,其他元素一律中性 */
+
+:root {
+  --color-bg-top: #0c1118;
+  --color-bg-bot: #0a0d13;
+  --color-surface: #141a23;
+  --color-surface-hi: #19212c;
+  --color-surface-border: #232c39;
+  --color-text: #e6e7ea;
+  --color-text-strong: #f4f5f7;
+  --color-text-secondary: #9aa3b2;
+  --color-text-muted: #6b7382;
+  --color-accent: #f5a524;
+  --color-good: #3fb950;
+  --color-bad: #f85149;
+  --color-neutral: #9aa3b2;
+
+  --font-sans:
+    'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Microsoft JhengHei', 'PingFang TC', sans-serif;
+  --font-mono:
+    'JetBrains Mono', 'SF Mono', 'Cascadia Code', 'Consolas', 'Menlo',
+    monospace;
+  --font-serif: 'Source Serif Pro', 'Georgia', 'Songti TC', serif;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background:
+    radial-gradient(
+      ellipse at 20% 0%,
+      rgba(80, 110, 180, 0.06) 0%,
+      transparent 60%
+    ),
+    linear-gradient(180deg, var(--color-bg-top) 0%, var(--color-bg-bot) 100%);
+  background-attachment: fixed;
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.55;
+  min-height: 100vh;
+  font-feature-settings: 'cv11', 'ss01';
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: var(--space-7) var(--space-5) var(--space-6);
+}
+
+/* ── Header ───────────────────────────────────────────── */
+
+.site-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding-bottom: var(--space-5);
+  margin-bottom: var(--space-6);
+  border-bottom: 1px solid var(--color-surface-border);
+}
+
+.site-head h1 {
+  margin: 0 0 var(--space-1);
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  color: var(--color-text-strong);
+  line-height: 1.2;
+}
+
+.site-head .subtitle {
+  color: var(--color-text-secondary);
+  font-size: 13px;
+  letter-spacing: 0.005em;
+}
+
+.site-head .updated {
+  font-size: 12px;
+  color: var(--color-text-muted);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.site-head .updated strong {
+  display: block;
+  color: var(--color-text);
+  font-weight: 500;
+  font-size: 13px;
+  margin-top: 2px;
+  letter-spacing: 0.01em;
+  font-family: var(--font-mono);
+}
+
+/* ── Section ──────────────────────────────────────────── */
+
+.section {
+  margin-bottom: var(--space-6);
+}
+
+.section-title {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-surface-border);
+  font-weight: 500;
+}
+
+.card-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card-grid.main-grid {
+  grid-template-columns: 1fr;
+}
+
+/* ── Card ─────────────────────────────────────────────── */
+
+.card {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    var(--color-surface-hi) 0%,
+    var(--color-surface) 100%
+  );
+  border: 1px solid var(--color-surface-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-4) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-md);
+  pointer-events: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    transparent 30%
+  );
+}
+
+.card-main {
+  padding: var(--space-5) var(--space-5) var(--space-4);
+  border-radius: var(--radius-lg);
+}
+
+.card-main::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-lg);
+  pointer-events: none;
+  background: radial-gradient(
+    ellipse at top right,
+    rgba(245, 165, 36, 0.05) 0%,
+    transparent 50%
+  );
+}
+
+.card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--space-2);
+}
+
+.card-head h3 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  color: var(--color-text);
+  letter-spacing: 0.005em;
+}
+
+.card-main .card-head h3 {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-text-strong);
+  letter-spacing: -0.005em;
+}
+
+.series-id {
+  font-size: 10px;
+  font-family: var(--font-mono);
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+}
+
+.value-row {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-1);
+}
+
+.value {
+  font-family: var(--font-mono);
+  font-size: 32px;
+  font-weight: 500;
+  color: var(--color-text-strong);
+  letter-spacing: -0.02em;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.card-main .value {
+  font-size: 56px;
+  font-weight: 500;
+  letter-spacing: -0.035em;
+}
+
+.delta {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  font-variant-numeric: tabular-nums;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.card-main .delta {
+  font-size: 17px;
+}
+
+.delta-arrow {
+  font-size: 0.85em;
+}
+
+.value-date {
+  font-size: 11px;
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+  font-family: var(--font-mono);
+}
+
+.card-main .value-date {
+  font-size: 12px;
+}
+
+/* ── Sparkline (小卡專用) ────────────────────────────── */
+
+.spark-slot {
+  margin-top: var(--space-2);
+}
+
+.sparkline {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+
+/* ── Hero interactive chart (lightweight-charts) ────── */
+
+.range-buttons {
+  display: flex;
+  gap: 2px;
+  margin-top: var(--space-3);
+  padding: 3px;
+  background: rgba(10, 13, 19, 0.5);
+  border: 1px solid var(--color-surface-border);
+  border-radius: var(--radius-sm);
+  width: fit-content;
+}
+
+.range-btn {
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: var(--color-text-secondary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  padding: 5px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition:
+    background 140ms ease,
+    color 140ms ease;
+}
+
+.range-btn:hover {
+  color: var(--color-text-strong);
+}
+
+.range-btn.active {
+  background: var(--color-accent);
+  color: #1a1207;
+  font-weight: 600;
+}
+
+.hero-chart {
+  width: 100%;
+  height: 380px;
+  margin-top: var(--space-3);
+  background: rgba(10, 13, 19, 0.3);
+  border: 1px solid var(--color-surface-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+/* ── Range bar ───────────────────────────────────────── */
+
+.range-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-1);
+}
+
+.range-slot {
+  flex: 1;
+  min-width: 0;
+}
+
+.range-bar {
+  display: block;
+  width: 100%;
+  height: 22px;
+}
+
+.range-bar .range-track {
+  stroke: var(--color-surface-border);
+  stroke-width: 2;
+}
+
+.range-bar .range-tick {
+  stroke: var(--color-surface-border);
+  stroke-width: 1;
+  opacity: 0.6;
+}
+
+.range-bar .range-marker {
+  filter: drop-shadow(0 0 4px currentColor);
+}
+
+.range-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1px;
+  font-size: 11px;
+  min-width: 58px;
+}
+
+.range-bucket {
+  color: var(--color-text-strong);
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.range-pct {
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.range-extremes {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10.5px;
+  color: var(--color-text-muted);
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  padding-top: 2px;
+}
+
+.range-extremes span::before {
+  margin-right: 4px;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.range-extremes span:first-child::before {
+  content: 'L';
+}
+
+.range-extremes span:last-child::before {
+  content: 'H';
+}
+
+/* ── Sentiment block ─────────────────────────────────── */
+
+.sentiment {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    var(--color-surface-hi) 0%,
+    var(--color-surface) 100%
+  );
+  border: 1px solid var(--color-surface-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-5) var(--space-5) var(--space-6);
+  margin-bottom: var(--space-6);
+  overflow: hidden;
+}
+
+.sentiment::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: var(--space-5);
+  bottom: var(--space-5);
+  width: 3px;
+  background: linear-gradient(
+    180deg,
+    var(--color-accent) 0%,
+    rgba(245, 165, 36, 0.3) 100%
+  );
+  border-radius: 0 2px 2px 0;
+}
+
+.sentiment-title {
+  font-size: 10.5px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin-bottom: var(--space-3);
+  font-weight: 500;
+}
+
+#sentiment-text {
+  font-family: var(--font-serif);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--color-text);
+  margin: 0;
+  letter-spacing: 0.005em;
+}
+
+/* ── References ──────────────────────────────────────── */
+
+.refs-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.refs-list a {
+  display: inline-flex;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-surface-border);
+  border-radius: var(--radius-sm);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  font-size: 12.5px;
+  letter-spacing: 0.005em;
+  transition:
+    border-color 160ms ease,
+    color 160ms ease,
+    background 160ms ease;
+}
+
+.refs-list a::after {
+  content: '↗';
+  margin-left: 6px;
+  font-size: 11px;
+  opacity: 0.6;
+}
+
+.refs-list a:hover {
+  border-color: var(--color-accent);
+  color: var(--color-text-strong);
+  background: var(--color-surface-hi);
+}
+
+/* ── Footer ──────────────────────────────────────────── */
+
+.site-foot {
+  margin-top: var(--space-8);
+  padding-top: var(--space-4);
+  border-top: 1px solid var(--color-surface-border);
+  font-size: 11.5px;
+  color: var(--color-text-muted);
+  line-height: 1.7;
+}
+
+.site-foot p {
+  margin: 0 0 var(--space-1);
+}
+
+.disclaimer {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* ── Error banner ────────────────────────────────────── */
+
+.error-banner {
+  background: var(--color-surface);
+  border: 1px solid var(--color-bad);
+  border-left-width: 3px;
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  color: var(--color-text);
+}
+
+.error-banner code {
+  background: var(--color-bg-bot);
+  padding: 2px 6px;
+  border-radius: 3px;
+  color: var(--color-accent);
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+
+/* ── Responsive ──────────────────────────────────────── */
+
+@media (max-width: 720px) {
+  #app {
+    padding: var(--space-5) var(--space-4) var(--space-5);
+  }
+  .site-head h1 {
+    font-size: 20px;
+  }
+  .card-main .value {
+    font-size: 40px;
+  }
+  .card-main .sparkline {
+    height: 70px;
+  }
+  #sentiment-text {
+    font-size: 15px;
+  }
+}

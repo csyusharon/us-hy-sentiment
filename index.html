@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>美國高收益債市場氛圍儀表板</title>
+    <meta
+      name="description"
+      content="以 FRED 資料每日更新的美國高收益債市場氛圍儀表板 — 涵蓋 OAS 利差、分評等利差、殖利率、總經利率通膨與動態氛圍判讀。"
+    />
+    <link rel="stylesheet" href="web/style.css" />
+    <!-- lightweight-charts (TradingView 開源版,UMD 全域)
+         先以同步方式載入,確保 web/interactive-chart.js 拿得到 window.LightweightCharts。 -->
+    <script src="https://cdn.jsdelivr.net/npm/lightweight-charts@4.2.0/dist/lightweight-charts.standalone.production.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <header class="site-head">
+        <div>
+          <h1>US HY Bond Market Sentiment</h1>
+          <div class="subtitle">
+            美國高收益債市場氛圍儀表板 · 近 3 年資料 · FRED daily
+          </div>
+        </div>
+        <div class="updated">
+          資料更新時間 (Asia/Taipei)
+          <strong id="updated-at">—</strong>
+        </div>
+      </header>
+
+      <main>
+        <section class="section">
+          <h2 class="section-title">主指標 · 整體高收益債利差</h2>
+          <div id="hero-slot"></div>
+        </section>
+
+        <section class="sentiment">
+          <div class="sentiment-title">動態氛圍判讀</div>
+          <p id="sentiment-text">—</p>
+        </section>
+
+        <div id="sections-slot"></div>
+
+        <section class="section">
+          <h2 class="section-title">延伸來源</h2>
+          <div id="references" class="refs-list"></div>
+        </section>
+      </main>
+
+      <footer class="site-foot">
+        <p>
+          資料來源:Federal Reserve Bank of St. Louis (FRED)。HY 利差/殖利率系列
+          為 ICE BofA 指數(授權由 ICE Data Indices, LLC 提供);總經系列為 BLS /
+          BEA / FRB / CBOE 公開資料。
+        </p>
+        <p>
+          資料限制:違約率、回收率、跌落天使、不良交換、HY 資金流向、HY
+          整體存續期間等項目 FRED 未提供,本頁未涵蓋。詳見 README。
+        </p>
+        <p class="disclaimer">
+          本頁僅為公開資訊整理,不構成投資建議,使用者應自行判斷與承擔風險。
+        </p>
+      </footer>
+    </div>
+
+    <script type="module" src="web/app.js"></script>
+  </body>
+</html>

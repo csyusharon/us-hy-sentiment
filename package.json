@@ -1,0 +1,14 @@
+{
+  "name": "hy-bond-dashboard",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "US High-Yield Bond market sentiment dashboard, data from FRED.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "fetch": "node scripts/fetch-data.js",
+    "preview": "node scripts/preview-server.js"
+  }
+}
