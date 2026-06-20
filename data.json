@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-06-19T17:46:30.260Z",
+  "updated_at": "2026-06-20T17:14:16.759Z",
   "lookback_years": 3,
   "sections": [
     {
@@ -68,10 +68,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-06-19",
-          "value": 4.15
-        },
         {
           "date": "2023-06-20",
           "value": 4.22
@@ -3229,8 +3225,8 @@
       "delta_unit": "bp",
       "min": 2.59,
       "max": 4.61,
-      "percentile": 0.017789072426937738,
-      "n_observations": 787
+      "percentile": 0.017811704834605598,
+      "n_observations": 786
     },
     {
       "id": "BAMLH0A1HYBB",
@@ -3240,10 +3236,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-06-19",
-          "value": 2.7
-        },
         {
           "date": "2023-06-20",
           "value": 2.77
@@ -6401,8 +6393,8 @@
       "delta_unit": "bp",
       "min": 1.56,
       "max": 3.11,
-      "percentile": 0.0025412960609911056,
-      "n_observations": 787
+      "percentile": 0.002544529262086514,
+      "n_observations": 786
     },
     {
       "id": "BAMLH0A2HYB",
@@ -6412,10 +6404,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-06-19",
-          "value": 4.35
-        },
         {
           "date": "2023-06-20",
           "value": 4.44
@@ -9573,8 +9561,8 @@
       "delta_unit": "bp",
       "min": 2.54,
       "max": 4.86,
-      "percentile": 0.10800508259212198,
-      "n_observations": 787
+      "percentile": 0.10814249363867684,
+      "n_observations": 786
     },
     {
       "id": "BAMLH0A3HYC",
@@ -9584,10 +9572,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-06-19",
-          "value": 9.66
-        },
         {
           "date": "2023-06-20",
           "value": 9.71
@@ -12745,8 +12729,8 @@
       "delta_unit": "bp",
       "min": 6.9,
       "max": 11.37,
-      "percentile": 0.758576874205845,
-      "n_observations": 787
+      "percentile": 0.7595419847328244,
+      "n_observations": 786
     },
     {
       "id": "BAMLH0A0HYM2EY",
@@ -12756,10 +12740,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-06-19",
-          "value": 8.31
-        },
         {
           "date": "2023-06-20",
           "value": 8.35
@@ -15917,8 +15897,8 @@
       "delta_unit": "bp",
       "min": 6.39,
       "max": 9.45,
-      "percentile": 0.32655654383735705,
-      "n_observations": 787
+      "percentile": 0.32697201017811706,
+      "n_observations": 786
     },
     {
       "id": "BAMLH0A0HYM2SYTW",
@@ -15928,10 +15908,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-06-19",
-          "value": 8.5
-        },
         {
           "date": "2023-06-20",
           "value": 8.54
@@ -19089,8 +19065,8 @@
       "delta_unit": "bp",
       "min": 6.49,
       "max": 9.54,
-      "percentile": 0.2655654383735705,
-      "n_observations": 787
+      "percentile": 0.26590330788804073,
+      "n_observations": 786
     },
     {
       "id": "BAMLC0A0CM",
@@ -19100,10 +19076,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-06-19",
-          "value": 1.35
-        },
         {
           "date": "2023-06-20",
           "value": 1.35
@@ -22257,8 +22229,8 @@
       "delta_unit": "bp",
       "min": 0.73,
       "max": 1.36,
-      "percentile": 0.035623409669211195,
-      "n_observations": 786
+      "percentile": 0.035668789808917196,
+      "n_observations": 785
     },
     {
       "id": "NFCI",
@@ -23640,10 +23612,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-06-19",
-          "value": 5.08
-        },
         {
           "date": "2023-06-20",
           "value": 5.07
@@ -28033,8 +28001,8 @@
       "delta_unit": "bp",
       "min": 3.62,
       "max": 5.33,
-      "percentile": 0.038356164383561646,
-      "n_observations": 1095
+      "percentile": 0.038391224862888484,
+      "n_observations": 1094
     },
     {
       "id": "DGS10",
@@ -40661,10 +40629,6 @@
       "transform": "raw",
       "data": [
         {
-          "date": "2023-06-19",
-          "value": 14.19
-        },
-        {
           "date": "2023-06-20",
           "value": 13.88
         },
@@ -43769,8 +43733,8 @@
       "delta_unit": "pt",
       "min": 11.86,
       "max": 52.33,
-      "percentile": 0.7364341085271318,
-      "n_observations": 774
+      "percentile": 0.7360931435963778,
+      "n_observations": 773
     },
     {
       "id": "DCOILWTICO",
