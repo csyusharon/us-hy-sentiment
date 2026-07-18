@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-17T16:57:25.216Z",
+  "updated_at": "2026-07-18T16:42:33.192Z",
   "lookback_years": 3,
   "sections": [
     {
@@ -68,10 +68,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 3.97
-        },
         {
           "date": "2023-07-18",
           "value": 3.9
@@ -3215,21 +3211,25 @@
         {
           "date": "2026-07-15",
           "value": 2.71
+        },
+        {
+          "date": "2026-07-16",
+          "value": 2.71
         }
       ],
       "latest": {
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "value": 2.71
       },
       "previous": {
-        "date": "2026-07-14",
-        "value": 2.72
+        "date": "2026-07-15",
+        "value": 2.71
       },
-      "delta": -1,
+      "delta": 0,
       "delta_unit": "bp",
       "min": 2.59,
       "max": 4.61,
-      "percentile": 0.096569250317662,
+      "percentile": 0.09783989834815757,
       "n_observations": 787
     },
     {
@@ -3240,10 +3240,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 2.56
-        },
         {
           "date": "2023-07-18",
           "value": 2.5
@@ -6387,21 +6383,25 @@
         {
           "date": "2026-07-15",
           "value": 1.62
+        },
+        {
+          "date": "2026-07-16",
+          "value": 1.61
         }
       ],
       "latest": {
+        "date": "2026-07-16",
+        "value": 1.61
+      },
+      "previous": {
         "date": "2026-07-15",
         "value": 1.62
       },
-      "previous": {
-        "date": "2026-07-14",
-        "value": 1.61
-      },
-      "delta": 1,
+      "delta": -1,
       "delta_unit": "bp",
       "min": 1.56,
       "max": 3.11,
-      "percentile": 0.07496823379923762,
+      "percentile": 0.05844980940279543,
       "n_observations": 787
     },
     {
@@ -6412,10 +6412,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 4.21
-        },
         {
           "date": "2023-07-18",
           "value": 4.13
@@ -9559,21 +9555,25 @@
         {
           "date": "2026-07-15",
           "value": 2.9
+        },
+        {
+          "date": "2026-07-16",
+          "value": 2.9
         }
       ],
       "latest": {
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "value": 2.9
       },
       "previous": {
-        "date": "2026-07-14",
-        "value": 2.92
+        "date": "2026-07-15",
+        "value": 2.9
       },
-      "delta": -2,
+      "delta": 0,
       "delta_unit": "bp",
       "min": 2.54,
       "max": 4.86,
-      "percentile": 0.21601016518424396,
+      "percentile": 0.21728081321473952,
       "n_observations": 787
     },
     {
@@ -9584,10 +9584,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 9.27
-        },
         {
           "date": "2023-07-18",
           "value": 9.22
@@ -12731,21 +12727,25 @@
         {
           "date": "2026-07-15",
           "value": 9.69
+        },
+        {
+          "date": "2026-07-16",
+          "value": 9.7
         }
       ],
       "latest": {
+        "date": "2026-07-16",
+        "value": 9.7
+      },
+      "previous": {
         "date": "2026-07-15",
         "value": 9.69
       },
-      "previous": {
-        "date": "2026-07-14",
-        "value": 9.73
-      },
-      "delta": -4,
+      "delta": 1,
       "delta_unit": "bp",
       "min": 6.9,
       "max": 11.37,
-      "percentile": 0.8843710292249047,
+      "percentile": 0.8881829733163914,
       "n_observations": 787
     },
     {
@@ -12756,10 +12756,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 8.15
-        },
         {
           "date": "2023-07-18",
           "value": 8.08
@@ -15903,21 +15899,25 @@
         {
           "date": "2026-07-15",
           "value": 6.96
+        },
+        {
+          "date": "2026-07-16",
+          "value": 6.96
         }
       ],
       "latest": {
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "value": 6.96
       },
       "previous": {
-        "date": "2026-07-14",
-        "value": 7.01
+        "date": "2026-07-15",
+        "value": 6.96
       },
-      "delta": -5,
+      "delta": 0,
       "delta_unit": "bp",
       "min": 6.39,
       "max": 9.45,
-      "percentile": 0.39390088945362134,
+      "percentile": 0.3951715374841169,
       "n_observations": 787
     },
     {
@@ -15928,10 +15928,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 8.38
-        },
         {
           "date": "2023-07-18",
           "value": 8.31
@@ -19075,21 +19071,25 @@
         {
           "date": "2026-07-15",
           "value": 7.1
+        },
+        {
+          "date": "2026-07-16",
+          "value": 7.1
         }
       ],
       "latest": {
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "value": 7.1
       },
       "previous": {
-        "date": "2026-07-14",
-        "value": 7.15
+        "date": "2026-07-15",
+        "value": 7.1
       },
-      "delta": -5,
+      "delta": 0,
       "delta_unit": "bp",
       "min": 6.49,
       "max": 9.54,
-      "percentile": 0.3189326556543837,
+      "percentile": 0.3202033036848793,
       "n_observations": 787
     },
     {
@@ -19100,10 +19100,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 1.29
-        },
         {
           "date": "2023-07-18",
           "value": 1.28
@@ -22243,21 +22239,25 @@
         {
           "date": "2026-07-15",
           "value": 0.79
+        },
+        {
+          "date": "2026-07-16",
+          "value": 0.78
         }
       ],
       "latest": {
+        "date": "2026-07-16",
+        "value": 0.78
+      },
+      "previous": {
         "date": "2026-07-15",
         "value": 0.79
       },
-      "previous": {
-        "date": "2026-07-14",
-        "value": 0.79
-      },
-      "delta": 0,
+      "delta": -1,
       "delta_unit": "bp",
       "min": 0.73,
       "max": 1.33,
-      "percentile": 0.21246819338422393,
+      "percentile": 0.16539440203562342,
       "n_observations": 786
     },
     {
@@ -23636,10 +23636,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 5.08
-        },
         {
           "date": "2023-07-18",
           "value": 5.08
@@ -28015,21 +28011,25 @@
         {
           "date": "2026-07-15",
           "value": 3.63
+        },
+        {
+          "date": "2026-07-16",
+          "value": 3.63
         }
       ],
       "latest": {
-        "date": "2026-07-15",
+        "date": "2026-07-16",
         "value": 3.63
       },
       "previous": {
-        "date": "2026-07-14",
+        "date": "2026-07-15",
         "value": 3.63
       },
       "delta": 0,
       "delta_unit": "bp",
       "min": 3.62,
       "max": 5.33,
-      "percentile": 0.0639269406392694,
+      "percentile": 0.06484018264840183,
       "n_observations": 1095
     },
     {
@@ -28040,10 +28040,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 3.81
-        },
         {
           "date": "2023-07-18",
           "value": 3.8
@@ -31035,21 +31031,25 @@
         {
           "date": "2026-07-15",
           "value": 4.55
+        },
+        {
+          "date": "2026-07-16",
+          "value": 4.57
         }
       ],
       "latest": {
+        "date": "2026-07-16",
+        "value": 4.57
+      },
+      "previous": {
         "date": "2026-07-15",
         "value": 4.55
       },
-      "previous": {
-        "date": "2026-07-14",
-        "value": 4.58
-      },
-      "delta": -3,
+      "delta": 2,
       "delta_unit": "bp",
       "min": 3.63,
       "max": 4.98,
-      "percentile": 0.8865153538050734,
+      "percentile": 0.9025367156208278,
       "n_observations": 749
     },
     {
@@ -31060,10 +31060,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 4.74
-        },
         {
           "date": "2023-07-18",
           "value": 4.74
@@ -34055,21 +34051,25 @@
         {
           "date": "2026-07-15",
           "value": 4.13
+        },
+        {
+          "date": "2026-07-16",
+          "value": 4.16
         }
       ],
       "latest": {
+        "date": "2026-07-16",
+        "value": 4.16
+      },
+      "previous": {
         "date": "2026-07-15",
         "value": 4.13
       },
-      "previous": {
-        "date": "2026-07-14",
-        "value": 4.18
-      },
-      "delta": -5,
+      "delta": 3,
       "delta_unit": "bp",
       "min": 3.38,
       "max": 5.19,
-      "percentile": 0.5313751668891856,
+      "percentile": 0.5487316421895861,
       "n_observations": 749
     },
     {
@@ -34080,10 +34080,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": -0.93
-        },
         {
           "date": "2023-07-18",
           "value": -0.94
@@ -37067,21 +37063,25 @@
         {
           "date": "2026-07-16",
           "value": 0.41
+        },
+        {
+          "date": "2026-07-17",
+          "value": 0.37
         }
       ],
       "latest": {
+        "date": "2026-07-17",
+        "value": 0.37
+      },
+      "previous": {
         "date": "2026-07-16",
         "value": 0.41
       },
-      "previous": {
-        "date": "2026-07-15",
-        "value": 0.42
-      },
-      "delta": -1,
+      "delta": -4,
       "delta_unit": "bp",
       "min": -0.99,
       "max": 0.74,
-      "percentile": 0.6104417670682731,
+      "percentile": 0.5836680053547524,
       "n_observations": 747
     },
     {
@@ -37092,10 +37092,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": -1.68
-        },
         {
           "date": "2023-07-18",
           "value": -1.69
@@ -40059,21 +40055,25 @@
         {
           "date": "2026-07-16",
           "value": 0.73
+        },
+        {
+          "date": "2026-07-17",
+          "value": 0.7
         }
       ],
       "latest": {
+        "date": "2026-07-17",
+        "value": 0.7
+      },
+      "previous": {
         "date": "2026-07-16",
         "value": 0.73
       },
-      "previous": {
-        "date": "2026-07-15",
-        "value": 0.72
-      },
-      "delta": 1,
+      "delta": -3,
       "delta_unit": "bp",
       "min": -1.74,
       "max": 1,
-      "percentile": 0.9716981132075472,
+      "percentile": 0.9568733153638814,
       "n_observations": 742
     },
     {
@@ -40652,10 +40652,6 @@
       "unit": "level",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 13.48
-        },
         {
           "date": "2023-07-18",
           "value": 13.3
@@ -43765,8 +43761,8 @@
       "delta_unit": "pt",
       "min": 11.86,
       "max": 52.33,
-      "percentile": 0.5483870967741935,
-      "n_observations": 775
+      "percentile": 0.5478036175710594,
+      "n_observations": 774
     },
     {
       "id": "DCOILWTICO",
@@ -43776,10 +43772,6 @@
       "unit": "level",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-07-17",
-          "value": 74.17
-        },
         {
           "date": "2023-07-18",
           "value": 75.76
@@ -46765,8 +46757,8 @@
       "delta_unit": "pt",
       "min": 55.44,
       "max": 114.58,
-      "percentile": 0.6774193548387096,
-      "n_observations": 744
+      "percentile": 0.676985195154778,
+      "n_observations": 743
     }
   ]
 }
