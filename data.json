@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T02:39:39.180Z",
+  "updated_at": "2026-11-25T00:12:42.643Z",
   "lookback_years": 3,
   "sections": [
     {
@@ -68,10 +68,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 3.85
-        },
         {
           "date": "2023-11-27",
           "value": 3.89
@@ -3203,21 +3199,25 @@
         {
           "date": "2026-11-20",
           "value": 3.76
+        },
+        {
+          "date": "2026-11-23",
+          "value": 3.63
         }
       ],
       "latest": {
+        "date": "2026-11-23",
+        "value": 3.63
+      },
+      "previous": {
         "date": "2026-11-20",
         "value": 3.76
       },
-      "previous": {
-        "date": "2026-11-19",
-        "value": 3.52
-      },
-      "delta": 24,
+      "delta": -13,
       "delta_unit": "bp",
       "min": 2.59,
       "max": 4.61,
-      "percentile": 0.9642857142857143,
+      "percentile": 0.9464285714285714,
       "n_observations": 784
     },
     {
@@ -3228,10 +3228,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 2.43
-        },
         {
           "date": "2023-11-27",
           "value": 2.48
@@ -6363,21 +6359,25 @@
         {
           "date": "2026-11-20",
           "value": 2.29
+        },
+        {
+          "date": "2026-11-23",
+          "value": 2.19
         }
       ],
       "latest": {
+        "date": "2026-11-23",
+        "value": 2.19
+      },
+      "previous": {
         "date": "2026-11-20",
         "value": 2.29
       },
-      "previous": {
-        "date": "2026-11-19",
-        "value": 2.1
-      },
-      "delta": 19,
+      "delta": -10,
       "delta_unit": "bp",
       "min": 1.5,
       "max": 3.06,
-      "percentile": 0.9502551020408163,
+      "percentile": 0.9349489795918368,
       "n_observations": 784
     },
     {
@@ -6388,10 +6388,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 4.04
-        },
         {
           "date": "2023-11-27",
           "value": 4.08
@@ -9523,21 +9519,25 @@
         {
           "date": "2026-11-20",
           "value": 4.08
+        },
+        {
+          "date": "2026-11-23",
+          "value": 3.93
         }
       ],
       "latest": {
+        "date": "2026-11-23",
+        "value": 3.93
+      },
+      "previous": {
         "date": "2026-11-20",
         "value": 4.08
       },
-      "previous": {
-        "date": "2026-11-19",
-        "value": 3.8
-      },
-      "delta": 28,
+      "delta": -15,
       "delta_unit": "bp",
       "min": 2.54,
       "max": 4.86,
-      "percentile": 0.9808673469387755,
+      "percentile": 0.9732142857142857,
       "n_observations": 784
     },
     {
@@ -9548,10 +9548,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 9.77
-        },
         {
           "date": "2023-11-27",
           "value": 9.76
@@ -12683,21 +12679,25 @@
         {
           "date": "2026-11-20",
           "value": 14.02
+        },
+        {
+          "date": "2026-11-23",
+          "value": 13.87
         }
       ],
       "latest": {
+        "date": "2026-11-23",
+        "value": 13.87
+      },
+      "previous": {
         "date": "2026-11-20",
         "value": 14.02
       },
-      "previous": {
-        "date": "2026-11-19",
-        "value": 13.61
-      },
-      "delta": 41,
+      "delta": -15,
       "delta_unit": "bp",
       "min": 6.9,
       "max": 14.02,
-      "percentile": 1,
+      "percentile": 0.9987244897959183,
       "n_observations": 784
     },
     {
@@ -12708,10 +12708,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 8.49
-        },
         {
           "date": "2023-11-27",
           "value": 8.44
@@ -15843,21 +15839,25 @@
         {
           "date": "2026-11-20",
           "value": 8.46
+        },
+        {
+          "date": "2026-11-23",
+          "value": 8.36
         }
       ],
       "latest": {
+        "date": "2026-11-23",
+        "value": 8.36
+      },
+      "previous": {
         "date": "2026-11-20",
         "value": 8.46
       },
-      "previous": {
-        "date": "2026-11-19",
-        "value": 8.35
-      },
-      "delta": 11,
+      "delta": -10,
       "delta_unit": "bp",
       "min": 6.39,
       "max": 8.51,
-      "percentile": 0.9961734693877551,
+      "percentile": 0.9897959183673469,
       "n_observations": 784
     },
     {
@@ -15868,10 +15868,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 8.66
-        },
         {
           "date": "2023-11-27",
           "value": 8.62
@@ -19003,21 +18999,25 @@
         {
           "date": "2026-11-20",
           "value": 8.64
+        },
+        {
+          "date": "2026-11-23",
+          "value": 8.54
         }
       ],
       "latest": {
+        "date": "2026-11-23",
+        "value": 8.54
+      },
+      "previous": {
         "date": "2026-11-20",
         "value": 8.64
       },
-      "previous": {
-        "date": "2026-11-19",
-        "value": 8.46
-      },
-      "delta": 18,
+      "delta": -10,
       "delta_unit": "bp",
       "min": 6.49,
       "max": 8.66,
-      "percentile": 0.9974489795918368,
+      "percentile": 0.9910714285714286,
       "n_observations": 784
     },
     {
@@ -19028,10 +19028,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 1.14
-        },
         {
           "date": "2023-11-27",
           "value": 1.14
@@ -22159,21 +22155,25 @@
         {
           "date": "2026-11-20",
           "value": 0.98
+        },
+        {
+          "date": "2026-11-23",
+          "value": 0.97
         }
       ],
       "latest": {
+        "date": "2026-11-23",
+        "value": 0.97
+      },
+      "previous": {
         "date": "2026-11-20",
         "value": 0.98
       },
-      "previous": {
-        "date": "2026-11-19",
-        "value": 0.94
-      },
-      "delta": 4,
+      "delta": -1,
       "delta_unit": "bp",
       "min": 0.73,
       "max": 1.21,
-      "percentile": 0.8659003831417624,
+      "percentile": 0.8505747126436781,
       "n_observations": 783
     },
     {
@@ -22184,10 +22184,6 @@
       "unit": "level",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": -0.319
-        },
         {
           "date": "2023-12-01",
           "value": -0.33
@@ -22820,9 +22816,9 @@
       "delta": 0,
       "delta_unit": "pt",
       "min": -0.571,
-      "max": -0.319,
-      "percentile": 0.5064102564102564,
-      "n_observations": 156
+      "max": -0.33,
+      "percentile": 0.5096774193548387,
+      "n_observations": 155
     },
     {
       "id": "STLFSI4",
@@ -22832,10 +22828,6 @@
       "unit": "level",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": -0.7189
-        },
         {
           "date": "2023-12-01",
           "value": -0.5138
@@ -23469,8 +23461,8 @@
       "delta_unit": "pt",
       "min": -0.9597,
       "max": 0.5814,
-      "percentile": 0.07692307692307693,
-      "n_observations": 156
+      "percentile": 0.07741935483870968,
+      "n_observations": 155
     },
     {
       "id": "DRTSCILM",
@@ -23556,10 +23548,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 5.33
-        },
         {
           "date": "2023-11-25",
           "value": 5.33
@@ -27927,22 +27915,34 @@
         {
           "date": "2026-11-20",
           "value": 3.88
+        },
+        {
+          "date": "2026-11-21",
+          "value": 3.88
+        },
+        {
+          "date": "2026-11-22",
+          "value": 3.88
+        },
+        {
+          "date": "2026-11-23",
+          "value": 3.88
         }
       ],
       "latest": {
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "value": 3.88
       },
       "previous": {
-        "date": "2026-11-19",
+        "date": "2026-11-22",
         "value": 3.88
       },
       "delta": 0,
       "delta_unit": "bp",
       "min": 3.62,
       "max": 5.33,
-      "percentile": 0.3421774931381519,
-      "n_observations": 1093
+      "percentile": 0.34429223744292237,
+      "n_observations": 1095
     },
     {
       "id": "DGS10",
@@ -27952,10 +27952,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 4.47
-        },
         {
           "date": "2023-11-27",
           "value": 4.39
@@ -30939,17 +30935,21 @@
         {
           "date": "2026-11-20",
           "value": 4.92
+        },
+        {
+          "date": "2026-11-23",
+          "value": 4.92
         }
       ],
       "latest": {
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "value": 4.92
       },
       "previous": {
-        "date": "2026-11-19",
-        "value": 5.04
+        "date": "2026-11-20",
+        "value": 4.92
       },
-      "delta": -12,
+      "delta": 0,
       "delta_unit": "bp",
       "min": 3.63,
       "max": 5.31,
@@ -30964,10 +30964,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 4.92
-        },
         {
           "date": "2023-11-27",
           "value": 4.84
@@ -33951,21 +33947,25 @@
         {
           "date": "2026-11-20",
           "value": 4.63
+        },
+        {
+          "date": "2026-11-23",
+          "value": 4.63
         }
       ],
       "latest": {
-        "date": "2026-11-20",
+        "date": "2026-11-23",
         "value": 4.63
       },
       "previous": {
-        "date": "2026-11-19",
-        "value": 4.76
+        "date": "2026-11-20",
+        "value": 4.63
       },
-      "delta": -13,
+      "delta": 0,
       "delta_unit": "bp",
       "min": 3.38,
       "max": 5.04,
-      "percentile": 0.8299866131191432,
+      "percentile": 0.8313253012048193,
       "n_observations": 747
     },
     {
@@ -33976,10 +33976,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": -0.45
-        },
         {
           "date": "2023-11-27",
           "value": -0.45
@@ -36955,21 +36951,25 @@
         {
           "date": "2026-11-23",
           "value": 0.29
+        },
+        {
+          "date": "2026-11-24",
+          "value": 0.28
         }
       ],
       "latest": {
+        "date": "2026-11-24",
+        "value": 0.28
+      },
+      "previous": {
         "date": "2026-11-23",
         "value": 0.29
       },
-      "previous": {
-        "date": "2026-11-20",
-        "value": 0.29
-      },
-      "delta": 0,
+      "delta": -1,
       "delta_unit": "bp",
       "min": -0.53,
       "max": 0.74,
-      "percentile": 0.4228187919463087,
+      "percentile": 0.40939597315436244,
       "n_observations": 745
     },
     {
@@ -36980,10 +36980,6 @@
       "unit": "percent",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": -1.07
-        },
         {
           "date": "2023-11-27",
           "value": -1.1
@@ -39939,17 +39935,21 @@
         {
           "date": "2026-11-23",
           "value": 0.55
+        },
+        {
+          "date": "2026-11-24",
+          "value": 0.55
         }
       ],
       "latest": {
-        "date": "2026-11-23",
+        "date": "2026-11-24",
         "value": 0.55
       },
       "previous": {
-        "date": "2026-11-20",
-        "value": 0.6
+        "date": "2026-11-23",
+        "value": 0.55
       },
-      "delta": -5,
+      "delta": 0,
       "delta_unit": "bp",
       "min": -1.65,
       "max": 1.09,
@@ -40532,10 +40532,6 @@
       "unit": "level",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 12.46
-        },
         {
           "date": "2023-11-27",
           "value": 12.69
@@ -43619,21 +43615,25 @@
         {
           "date": "2026-11-20",
           "value": 35.89
+        },
+        {
+          "date": "2026-11-23",
+          "value": 26.62
         }
       ],
       "latest": {
+        "date": "2026-11-23",
+        "value": 26.62
+      },
+      "previous": {
         "date": "2026-11-20",
         "value": 35.89
       },
-      "previous": {
-        "date": "2026-11-19",
-        "value": 28.44
-      },
-      "delta": 7.5,
+      "delta": -9.3,
       "delta_unit": "pt",
       "min": 11.86,
       "max": 52.33,
-      "percentile": 0.9922279792746114,
+      "percentile": 0.9598445595854922,
       "n_observations": 772
     },
     {
@@ -43644,10 +43644,6 @@
       "unit": "level",
       "transform": "raw",
       "data": [
-        {
-          "date": "2023-11-24",
-          "value": 74.83
-        },
         {
           "date": "2023-11-27",
           "value": 74.46
@@ -46633,8 +46629,8 @@
       "delta_unit": "pt",
       "min": 55.44,
       "max": 114.58,
-      "percentile": 0.8400537634408602,
-      "n_observations": 744
+      "percentile": 0.8398384925975774,
+      "n_observations": 743
     }
   ]
 }
