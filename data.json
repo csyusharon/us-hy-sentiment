@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T23:51:26.943Z",
+  "updated_at": "2026-11-27T00:08:43.316Z",
   "lookback_years": 3,
   "sections": [
     {
@@ -23585,14 +23585,6 @@
       "transform": "raw",
       "data": [
         {
-          "date": "2023-11-25",
-          "value": 5.33
-        },
-        {
-          "date": "2023-11-26",
-          "value": 5.33
-        },
-        {
           "date": "2023-11-27",
           "value": 5.33
         },
@@ -27981,8 +27973,8 @@
       "delta_unit": "bp",
       "min": 3.62,
       "max": 5.33,
-      "percentile": 0.3448905109489051,
-      "n_observations": 1096
+      "percentile": 0.34552102376599636,
+      "n_observations": 1094
     },
     {
       "id": "DGS10",
